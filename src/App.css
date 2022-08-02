@@ -11,7 +11,17 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center !important;
+  margin-bottom: 20px;
 }
+
+.main-content {
+  display: flex;
+  flex-flow: row wrap;
+  width: auto;
+  height: auto;
+  justify-content: space-between;
+}
+
 
 .imgs {
   max-height: 350px;
