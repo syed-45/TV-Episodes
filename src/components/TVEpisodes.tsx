@@ -26,12 +26,12 @@ interface IEpisode {
 
 function EpisodeApp(props: IEpisode): JSX.Element {
   return (
-    <>
+    <div className="card-border">
       <h2>{props.name}</h2>
-      <img src={props.image.medium} alt="episodeImage"></img>
+      <img className="imgs" src={props.image.medium} alt="episodeImage"></img>
       <h3>episode season + number</h3>
       <p> description</p>
-    </>
+    </div>
   );
 }
 
