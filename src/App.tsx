@@ -1,7 +1,14 @@
-import { greet } from "./utils/greet";
+import EpisodeApp from "./components/TVEpisodes";
+import episodes from "./episodes.json"
+import "./App.css"
+
 
 function App(): JSX.Element {
-  return <h1>{greet("World")}</h1>;
+  return(
+    <>      
+      <EpisodeApp {...episodes[0]}/>
+    </>
+  )
 }
 
 export default App;
