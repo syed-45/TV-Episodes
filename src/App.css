@@ -1,3 +1,19 @@
 .myStyle {
   background-color: blue;
 }
+
+.card-border {
+  border: 10px solid black;
+  border-radius: 25px 0px 25px 0px;
+  width: 380px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center !important;
+}
+
+.imgs {
+  max-height: 350px;
+  max-width: 350px;
+}
