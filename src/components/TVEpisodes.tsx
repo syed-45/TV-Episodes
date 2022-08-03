@@ -1,3 +1,5 @@
+import { createEpisodeCode } from "../utils/createEpisodeCode";
+
 interface IEpisode {
   id: number;
   url: string;
@@ -29,8 +31,8 @@ function EpisodeApp(props: IEpisode): JSX.Element {
     <div className="card-border">
       <h2>{props.name}</h2>
       <img className="imgs" src={props.image.medium} alt="episodeImage"></img>
-      <h3>episode season + number</h3>
-      <p> {removeP(props.summary)}</p>
+      <h3>{createEpisodeCode(props.season, props.number)}</h3>
+      <p> {removeP(props.summary)}</p>      
     </div>
   );
 }
