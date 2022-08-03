@@ -4,12 +4,11 @@ import "./App.css";
 
 function App(): JSX.Element {
   return (
-    <div className ="main-content">    
-    {episodes.map((episode) => (
-  < EpisodeApp key={episode.name} {...episode} /> ))}
-
+    <div className="main-content">
+      {episodes.map((episode) => (
+        <EpisodeApp key={episode.name} {...episode} />
+      ))}
     </div>
-    
   );
 }
 
