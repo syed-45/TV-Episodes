@@ -1,8 +1,9 @@
 function FooterApp(): JSX.Element {
-    return (
-        <p>hello</p>
-    )
-  }
-  
-  
-  export default FooterApp;
+  return (
+    <footer className="footerStyle">
+      <a href="https://tvmaze.com/"> Data obtained from TVMaze </a>
+    </footer>
+  );
+}
+
+export default FooterApp;

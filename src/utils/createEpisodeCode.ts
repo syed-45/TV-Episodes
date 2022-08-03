@@ -1,18 +1,17 @@
-export function createEpisodeCode (seasonNum: number, episodeNum: number): string {
+export function createEpisodeCode(
+  seasonNum: number,
+  episodeNum: number
+): string {
+  let zeroPaddedSeasonNum = seasonNum.toString();
+  let zeroPaddedEpisodeNum = episodeNum.toString();
 
-    let zeroPaddedSeasonNum = seasonNum.toString()    
-    let zeroPaddedEpisodeNum = episodeNum.toString()
+  if (seasonNum < 10) {
+    zeroPaddedSeasonNum = "0" + seasonNum.toString();
+  }
 
-    if (seasonNum < 10) {
-        zeroPaddedSeasonNum = '0' + seasonNum.toString()
-    }
-   
-    if (episodeNum < 10) {
-        zeroPaddedEpisodeNum = '0' + episodeNum.toString()
-    }
-    
+  if (episodeNum < 10) {
+    zeroPaddedEpisodeNum = "0" + episodeNum.toString();
+  }
 
-return 'S'+zeroPaddedSeasonNum+'E'+zeroPaddedEpisodeNum 
-
+  return "S" + zeroPaddedSeasonNum + "E" + zeroPaddedEpisodeNum;
 }
-
