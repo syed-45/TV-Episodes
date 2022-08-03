@@ -30,9 +30,14 @@ function EpisodeApp(props: IEpisode): JSX.Element {
       <h2>{props.name}</h2>
       <img className="imgs" src={props.image.medium} alt="episodeImage"></img>
       <h3>episode season + number</h3>
-      <p> description</p>
+      <p> {removeP(props.summary)}</p>
     </div>
   );
 }
+
+function removeP(StringToRemove: string): string{
+  return StringToRemove.slice(3, StringToRemove.length-4)
+}
+
 
 export default EpisodeApp;
