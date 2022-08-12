@@ -1,8 +1,5 @@
 function LiveSearch(): JSX.Element {
-    return (
-      <input></input>
-    );
-  }
-  
-  export default LiveSearch;
-  
+  return <input></input>;
+}
+
+export default LiveSearch;
